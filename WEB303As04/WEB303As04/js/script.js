@@ -9,8 +9,10 @@ $(function () {
             navigator.geolocation.getCurrentPosition(function (position) {
                 var lat = position.coords.latitude;
                 var lon = position.coords.longitude;
+                var accuracy = "Accuracy: " + position.coords.accuracy + " meters";
                 var currentLocation = "Latitude: " + lat + ", Longitude: " + lon;
                 $("#locationhere").text(currentLocation);
+                $("#accuracyhere").text(accuracy);
 
                 var storedLocation = localStorage.getItem("userLocation");
 
@@ -20,8 +22,8 @@ $(function () {
                     $("body").append("<h2>Welcome back to the page!</h2>");
 
                     var distance = calculateDistance(lat, lon, ...parseCoordinates(storedLocation));
-
-                    $("body").append("<p>You traveled " + distance + " meters since your last visit to this page.</p>");
+                    var distanceInKilometers = (distance / 1000).toFixed(2);
+                    $("body").append("<p>You traveled " + distanceInKilometers + " km since your last visit to this page.</p>");
                 } else {
                     $("body").append("<h1>Welcome to the page for the first time!</h1>");
                 }
@@ -32,7 +34,6 @@ $(function () {
             $("#locationhere").text("Geolocation is not available. Please allow geolocation to use this application.");
         }
     }
-
 
     // DO NOT EDIT ANY CODE IN THIS FUNCTION DEFINTION
     // function to calculate the distance in metres between two lat/long pairs on Earth
