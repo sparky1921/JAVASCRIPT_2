@@ -4,35 +4,61 @@
 */
 
 $(function () {
-    function getLocationAndDisplay() {
-        if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                var lat = position.coords.latitude;
-                var lon = position.coords.longitude;
-                var accuracy = "Accuracy: " + position.coords.accuracy + " meters";
-                var currentLocation = "Latitude: " + lat + ", Longitude: " + lon;
-                $("#locationhere").text(currentLocation);
-                $("#accuracyhere").text(accuracy);
+    if ("geolocation" in navigator) {
 
-                var storedLocation = localStorage.getItem("userLocation");
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            var lDiv = $("#locationhere");
+            lDiv.text("Your current location is: " + lat.toFixed(6) + "°N, " + lon.toFixed(6) + "°E");
 
-                if (storedLocation) {
-                    var storedLocationTag = $("<p>").text("Stored Location: " + storedLocation);
-                    $("body").append(storedLocationTag);
-                    $("body").append("<h2>Welcome back to the page!</h2>");
+            if (localStorage.getItem("location") !== null) {
 
-                    var distance = calculateDistance(lat, lon, ...parseCoordinates(storedLocation));
-                    var distanceInKilometers = (distance / 1000).toFixed(2);
-                    $("body").append("<p>You traveled " + distanceInKilometers + " km since your last visit to this page.</p>");
-                } else {
-                    $("body").append("<h1>Welcome to the page for the first time!</h1>");
-                }
 
-                localStorage.setItem("userLocation", currentLocation);
-            });
+
+                var storedLocation = localStorage.getItem("location");
+                var sLocationTag = $("<p>").text("Your last location was: " + storedLocation);
+                var contentSection = $("#content");
+                contentSection.append(sLocationTag);
+                
+                var welcomeMessage = $("<h2>").text("Welcome back!");
+                contentSection.prepend(welcomeMessage);
+
+                var distance = calcDistanceBetweenPoints(lat, lon, storedLocation.split(",")[0], storedLocation.split(",")[1]);
+
+
+                var distanceKm = (distance / 1000).toFixed(2);
+                var distanceMessage = $("<p>").text("You have traveled " + distanceKm + " km since your last visit.");
+                contentSection.append(distanceMessage);
+
+
+
+            } else {
+
+                var welcomeMessage = $("<h2>").text("Welcome!");
+                var contentSection = $("#content");
+                contentSection.prepend(welcomeMessage);
+
+            }
+            localStorage.setItem("location", lat + "," + lon);
+            var accuracy = position.coords.accuracy; //accuracy and distance in kilometers.
+            var accuracyKm = (accuracy / 1000).toFixed(2);
+            var accuracyMessage = $("<p>").text("Location Accuracy: " + accuracyKm + " km");
+            contentSection.append(accuracyMessage);
+
+        }, function (error) {
+    
+            if (error.code === error.PERMISSION_DENIED) {
+
+                var lDiv = $("#locationhere");
+                lDiv.text("You must allow geolocation to use this application.");
+            }
+        });
+
         } else {
-            $("#locationhere").text("Geolocation is not available. Please allow geolocation to use this application.");
-        }
+
+        var lDiv = $("#locationhere");
+        lDiv.text("Geolocation is not supported with your browser.");
     }
 
     // DO NOT EDIT ANY CODE IN THIS FUNCTION DEFINTION
@@ -54,12 +80,6 @@ $(function () {
 
         return (R * c);
     }
-    function parseCoordinates(location) {
-        var coordinates = location.split(", ");
-        return [parseFloat(coordinates[0]), parseFloat(coordinates[1])];
-    }
-
-    getLocationAndDisplay();
 });
 
 
