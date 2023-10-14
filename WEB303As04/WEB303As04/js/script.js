@@ -10,25 +10,25 @@ $(function () {
             var lat = position.coords.latitude;
             var lon = position.coords.longitude;
             var lDiv = $("#locationhere");
-            lDiv.text("Your current location is: " + lat.toFixed(6) + "°N, " + lon.toFixed(6) + "°E");
+            lDiv.text("Your current location is as following: " + lat.toFixed(6) + "°N, " + lon.toFixed(6) + "°E");
 
             if (localStorage.getItem("location") !== null) {
 
 
 
                 var storedLocation = localStorage.getItem("location");
-                var sLocationTag = $("<p>").text("Your last location was: " + storedLocation);
+                var sLocationTag = $("<p>").text("Your last location was as following: " + storedLocation);
                 var contentSection = $("#content");
                 contentSection.append(sLocationTag);
-                
-                var welcomeMessage = $("<h2>").text("Welcome back!");
+
+                var welcomeMessage = $("<h2>").text("Welcome back to the location page!");
                 contentSection.prepend(welcomeMessage);
 
                 var distance = calcDistanceBetweenPoints(lat, lon, storedLocation.split(",")[0], storedLocation.split(",")[1]);
 
 
                 var distanceKm = (distance / 1000).toFixed(2);
-                var distanceMessage = $("<p>").text("You have traveled " + distanceKm + " km since your last visit.");
+                var distanceMessage = $("<p>").text("You traveled " + distanceKm + " km since your last visit.");
                 contentSection.append(distanceMessage);
 
 
@@ -47,18 +47,18 @@ $(function () {
             contentSection.append(accuracyMessage);
 
         }, function (error) {
-    
+
             if (error.code === error.PERMISSION_DENIED) {
 
                 var lDiv = $("#locationhere");
-                lDiv.text("You must allow geolocation to use this application.");
+                lDiv.text("You must allow geolocation function in your browser to use this application.");
             }
         });
 
-        } else {
+    } else {
 
         var lDiv = $("#locationhere");
-        lDiv.text("Geolocation is not supported with your browser.");
+        lDiv.text("Geolocation is diabled in your browser, Thank You, Try Again Please.");
     }
 
     // DO NOT EDIT ANY CODE IN THIS FUNCTION DEFINTION
@@ -81,5 +81,3 @@ $(function () {
         return (R * c);
     }
 });
-
-
