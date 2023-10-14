@@ -53,6 +53,12 @@ $(function () {
 
         return (R * c);
     }
+    function parseCoordinates(location) {
+        var coordinates = location.split(", ");
+        return [parseFloat(coordinates[0]), parseFloat(coordinates[1])];
+    }
+
+    getLocationAndDisplay();
 });
 
 
