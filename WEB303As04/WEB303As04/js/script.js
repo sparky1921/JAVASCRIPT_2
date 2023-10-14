@@ -21,13 +21,13 @@ $(function () {
                     $("body").append(storedLocationTag);
                     $("body").append("<h2>Welcome back to the page!</h2>");
 
-                    var distanceInMeters = calculateDistance(lat, lon, ...parseCoordinates(storedLocation));
-                    $("body").append("<p>You traveled " + distanceInMeters + " meters since your last visit to this page.</p>");
+                    var distance = calculateDistance(lat, lon, ...parseCoordinates(storedLocation));
+                    var distanceInKilometers = (distance / 1000).toFixed(2);
+                    $("body").append("<p>You traveled " + distanceInKilometers + " km since your last visit to this page.</p>");
                 } else {
                     $("body").append("<h1>Welcome to the page for the first time!</h1>");
                 }
 
-                // Store the current location in local storage
                 localStorage.setItem("userLocation", currentLocation);
             });
         } else {
