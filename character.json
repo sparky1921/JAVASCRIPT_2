@@ -1,0 +1,85 @@
+// PARTH PATEL
+// 0817381
+
+[
+  {
+    "first_name": "Eleven",
+    "last_name": "Ives",
+    "gender": "Female",
+    "house": "Hawkins",
+    "status": "Alive",
+    "date": "2023-04-12"
+  },
+  {
+    "first_name": "Mike",
+    "last_name": "Wheeler",
+    "gender": "Male",
+    "house": "Hawkins",
+    "status": "Alive",
+    "date": "2023-04-12"
+  },
+  {
+    "first_name": "Dustin",
+    "last_name": "Henderson",
+    "gender": "Male",
+    "house": "Hawkins",
+    "status": "Alive",
+    "date": "2023-04-12"
+  },
+  {
+    "first_name": "Jim",
+    "last_name": "Hopper",
+    "gender": "Male",
+    "house": "Hawkins Police",
+    "status": "Alive",
+    "date": "2023-04-12"
+  },
+  {
+    "first_name": "Joyce",
+    "last_name": "Byers",
+    "gender": "Female",
+    "house": "Hawkins",
+    "status": "Alive",
+    "date": "2023-04-12"
+  },
+  {
+    "first_name": "Max",
+    "last_name": "Mayfield",
+    "gender": "Female",
+    "house": "Hawkins",
+    "status": "Alive",
+    "date": "2023-04-12"
+  },
+  {
+    "first_name": "Lucas",
+    "last_name": "Sinclair",
+    "gender": "Male",
+    "house": "Hawkins",
+    "status": "Alive",
+    "date": "2023-04-12"
+  },
+  {
+    "first_name": "Will",
+    "last_name": "Byers",
+    "gender": "Male",
+    "house": "Hawkins",
+    "status": "Alive",
+    "date": "2023-04-12"
+  },
+  {
+    "first_name": "Nancy",
+    "last_name": "Wheeler",
+    "gender": "Female",
+    "house": "Hawkins",
+    "status": "Alive",
+    "date": "2023-04-12"
+  },
+  {
+    "first_name": "Jonathan",
+    "last_name": "Byers",
+    "gender": "Male",
+    "house": "Hawkins",
+    "status": "Alive",
+    "date": "2023-04-12"
+  }
+]

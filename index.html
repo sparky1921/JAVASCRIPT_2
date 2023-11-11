@@ -1,0 +1,36 @@
+<!-- PARTH Patel - 0817381 -->
+<html>
+
+<head>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Parth Patel : Stranger Things </h1>
+        <div class="search-area">
+            <input type="text" id="search" placeholder="Search">
+        </div>
+        <table class="table table-bordered" id="characterTable">
+            <thead>
+                <tr>
+                    <th><a href="#" data-column="first_name">First Name</a></th>
+                    <th><a href="#" data-column="last_name">Last Name</a></th>
+                    <th><a href="#" data-column="gender">Gender</a></th>
+                    <th><a href="#" data-column="house">House</a></th>
+                    <th><a href="#" data-column="status">Status</a></th>
+                    <th><a href="#" data-column="date">Date</a></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+        <div class="buttons" id="filterButtons">
+            <button type="button" class="btn" id="filterAM">Filter by A-M</button>
+            <button type="button" class="btn" id="filterNZ">Filter by N-Z</button>
+            <button type="button" class="btn" id="all">All</button>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
