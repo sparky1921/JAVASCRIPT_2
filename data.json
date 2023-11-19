@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Spider-Man",
+        "characterName": "Peter Parker",
+        "firstReleased": "10-Nov-2015",
+        "friend": "Iron Man",
+        "abilities": "Wall-crawling, super strength, agility, and reflexes. Ability to shoot webs and a 'spider-sense' that warns of danger.",
+        "looks": "Amazing Fantasy #15"
+    },
+    {
+        "name": "Iron Man",
+        "characterName": "Tony Stark",
+        "firstReleased": "7-Jul-2008",
+        "friend": "Spider-Man",
+        "abilities": "Genius-level intellect, powered armor granting flight, super strength, and an array of weapons and gadgets.",
+        "looks": "Tales of Suspense #39"
+    },
+    {
+        "name": "Captain America",
+        "characterName": "Steve Rogers",
+        "firstReleased": "15-Apr-2011",
+        "friend": "Bucky Barnes",
+        "abilities": "Peak human strength, agility, and endurance. Master tactician and hand-to-hand combatant. Wields a vibranium shield.",
+        "looks": "Captain America Comics #1"
+    },
+    {
+        "name": "Black Widow",
+        "characterName": "Natasha Romanoff",
+        "firstReleased": "3-May-2016",
+        "friend": "Hawkeye",
+        "abilities": "Expert martial artist, espionage agent, and assassin. Exceptional agility, strength, and weapons proficiency.",
+        "looks": "Tales of Suspense #52"
+    },
+    {
+        "name": "Thor",
+        "characterName": "Thor Odinson",
+        "firstReleased": "28-Feb-2014",
+        "friend": "Loki",
+        "abilities": "Super strength, speed, durability, and the power to control lightning. Wields the enchanted hammer, Mjolnir.",
+        "looks": "Journey into Mystery #83"
+    },
+    {
+        "name": "Hulk",
+        "characterName": "Bruce Banner",
+        "firstReleased": "12-Sep-2019",
+        "friend": "Black Widow",
+        "abilities": "Superhuman strength, durability, and regenerative healing factor. Increases in strength as anger rises.",
+        "looks": "The Incredible Hulk #1"
+    },
+    {
+        "name": "Doctor Strange",
+        "characterName": "Stephen Strange",
+        "firstReleased": "5-Nov-2017",
+        "friend": "Wong",
+        "abilities": "Mastery of the mystic arts, including spells, astral projection, and manipulation of magical energy.",
+        "looks": "Strange Tales #110"
+    },
+    {
+        "name": "Black Panther",
+        "characterName": "T'Challa",
+        "firstReleased": "19-Mar-2022",
+        "friend": "Shuri",
+        "abilities": "Enhanced strength, speed, agility, and senses. Utilizes Vibranium suit and technology.",
+        "looks": "Fantastic Four #52"
+    }
+]

@@ -1,0 +1,80 @@
+main {
+    width: 85%;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.search-area {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#search {
+    padding: 12px;
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f5f5f5;
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #e0e0e0;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn, .btnn, .bttn {
+    padding: 12px 22px;
+    margin: 0 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+}
+
+.btn:hover, .btnn:hover, .bttn:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
+    .btn, .btnn, .bttn {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+}
