@@ -1,0 +1,75 @@
+/* Assignment 9
+Javascript 2 SEM 3
+Parth Patel 0817381 */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 10px;
+    color: #000000;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+}
+
+#searchwrapper {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#search {
+    padding: 15px;
+    width: 280px;
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 2px solid #808080;
+}
+
+th, td {
+    padding: 6px;
+    text-align: left;
+}
+
+th {
+    background-color: #fbff00;
+    color: rgb(232, 232, 232);
+}
+
+tr:nth-child(even) {
+    background-color: #b8b8b8;
+}
+
+.btn-filter {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #002e5f;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background-color: #112032;
+}
+
+.btn-filter:active {
+    background-color: #011125;
+}
+
+.btn-filter:focus {
+    outline: none;
+}

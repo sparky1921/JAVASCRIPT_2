@@ -1,0 +1,74 @@
+[
+    {
+        "givenName": "Sergio",
+        "lastName": "Marquina",
+        "charactersName": "The Professor",
+        "orignalName": "Álvaro Morte",
+        "characterGender": "Male",
+        "charType": "Mastermind",
+        "charDob": "1975-02-23"
+    },
+    {
+        "givenName": "Silene",
+        "lastName": "Oliveira",
+        "charactersName": "Tokyo",
+        "orignalName": "Úrsula Corberó",
+        "characterGender": "Female",
+        "charType": "Robber",
+        "charDob": "1989-11-11"
+    },
+    {
+        "givenName": "Andrés",
+        "lastName": "de Fonollosa",
+        "charactersName": "Berlin",
+        "orignalName": "Pedro Alonso",
+        "characterGender": "Male",
+        "charType": "Robber",
+        "charDob": "1971-10-21"
+    },
+    {
+        "givenName": "Ricardo",
+        "lastName": "Ramos",
+        "charactersName": "Denver",
+        "orignalName": "Jaime Lorente",
+        "characterGender": "Male",
+        "charType": "Robber",
+        "charDob": "1991-12-12"
+    },
+    {
+        "givenName": "Ágata",
+        "lastName": "Jiménez",
+        "charactersName": "Nairobi",
+        "orignalName": "Alba Flores",
+        "characterGender": "Female",
+        "charType": "Robber",
+        "charDob": "1986-10-27"
+    },
+    {
+        "givenName": "Aníbal",
+        "lastName": "Cortés",
+        "charactersName": "Rio",
+        "orignalName": "Miguel Herrán",
+        "characterGender": "Male",
+        "charType": "Robber",
+        "charDob": "1996-04-25"
+    },
+    {
+        "givenName": "Mónica",
+        "lastName": "Gaztambide",
+        "charactersName": "Stockholm",
+        "orignalName": "Esther Acebo",
+        "characterGender": "Female",
+        "charType": "Robber",
+        "charDob": "1983-01-19"
+    },
+    {
+        "givenName": "Raquel",
+        "lastName": "Murillo",
+        "charactersName": "Lisbon",
+        "orignalName": "Itziar Ituño",
+        "characterGender": "Female",
+        "charType": "Negotiator turned Robber",
+        "charDob": "1974-06-18"
+    }
+]

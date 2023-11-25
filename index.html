@@ -1,0 +1,48 @@
+<!-- Assignment 9
+Javascript 2 SEM 3
+Parth Patel 0817381 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parth Patel</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>
+        Parth - Money Hiest
+    </h1>
+
+    <div id="searchwrapper">
+        <label for="search">Search by the First Name Here:</label>
+        <input type="text" id="search" placeholder="Please enter first name here">
+    </div>
+
+    <table id="char-table">
+        <thead>
+            <tr>
+                <th><a href="#" data-sort="name">Given Name of Character</a></th>
+                <th><a href="#" data-sort="name">Last Name of Character</a></th>
+                <th><a href="#" data-sort="name">Character's Name</a></th>
+                <th><a href="#" data-sort="name">Real Name of Character</a></th>
+                <th><a href="#" data-sort="name">Gender of Character</a></th>
+                <th><a href="#" data-sort="name">Type of Character</a></th>
+                <th><a href="#" data-sort="date">Date of Birth of Character</a></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div id="btns-filter">
+        <button class="btn-filter" data-filter="A-M">A - M (<span id="amLength"></span>)</button>
+        <button class="btn-filter" data-filter="N-Z">N - Z (<span id="nzLength"></span>)</button>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
